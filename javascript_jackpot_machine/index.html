@@ -1,0 +1,52 @@
+<!-- notice how both the opening <html> tag and the closing </html> tag are NOT indented so you can clearly see the start and end of the code -->
+<html>
+	
+	<!-- the <head> section is for all the information that is needed by the browser but does NOT show up on the page -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Escaping Wonderland</title>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+
+	<!-- the <body> section is for all the content that is actually displayed on the page -->
+	<body>
+		<div class="first purple">
+			<div class="smallbox aa center-content">
+				<img src="images/QUESTION.PNG" class="restrict" onclick="checkSlot(this)"/>
+			</div>
+			<div class="smallbox bb center-content">
+				<img src="images/QUESTION.PNG" class="restrict" onclick="checkSlot1(this)"/>
+			</div>
+			<div class="smallbox cc center-content">
+				<img src="images/QUESTION.PNG" class="restrict" onclick="checkSlot2(this)"/>
+			</div>
+		</div>
+		<div class="second gold center-content">
+		    <div class="smallbox ee center-content" >
+				<img src="images/alice.PNG" class="restrict" id="first" class="center-content" onclick="nextImage(this)"/>
+			</div>
+			<div class="smallbox dd center-content">
+				<img src="images/alice3.PNG" class="restrict" id="third" onclick="nextImage2(this)"/>
+			</div>
+			<div class="smallbox ff center-content">
+				<img src="images/alice2.PNG" class="restrict" id="fifth" onclick="nextImage3(this)"/>
+			</div>
+		</div>
+		<div class="third slate center-content">
+		    <div class="smallbox hh center-content">
+			<img src="images/alice2.PNG" class="restrict" id="second" onclick="nextImage4(this)"/>
+			</div>
+			<div class="smallbox ii center-content">
+			<img src="images/alice.PNG" class="restrict" id="fourth" onclick="nextImage5(this)"/>
+			</div>
+			<div class="smallbox gg center-content">
+			<img src="images/alice3.PNG" class="restrict" id="sixth" onclick="nextImage6(this)"/>
+			</div>
+		</div>
+		<div class="fourth pink center-content">
+			<img src="images/key.PNG" class="restrict"/>
+		</div>
+			<script src="script.js"></script>
+	</body>
+</html>
